@@ -6,7 +6,7 @@ self-driving library written in Python and using tools like Keras, Tensorflow, a
 Raspberry Pi/Jetson Nano hooked up to an RC car, or it can be run in the Donkey Car Unity Simulator (https://github.com/tawnkramer/gym-donkeycar).
 
 The Donkey Car (https://github.com/autorope/donkeycar/blob/dev/LICENSE), as well as this EERI 474 Project, is licensed under the MIT Open Source
-License(LICENSE).
+License [https://github.com/brontisaur/EERI-474-2020/blob/main/LICENSE](LICENSE).
 ## Problem Statement:
 
 
