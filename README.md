@@ -27,6 +27,24 @@ changes in background, lighting, and track topology. Functions such as grayscale
 relevant [OpenCV Libraries](https://opencv.org/).
 
 The development of the Convolutional Neural Network will be discussed in the Methodology section.
-## Methodology:
 
-## End Product:
+## Methodology:
+After going through the current state-of-the art for the purposes of writing a literature survey for Neural Networks and Generalisation, an in-depth literature
+study was also written and researced to fully understand each layer, activation function, optimization function and more present in a Convolutional Neural Network
+so that these components can be effectively used and selected.
+
+Colab notebooks were set up for various stages of an experimental design process - which started with getting a CNN to do just better than a random guess, to 
+building it up until it overfit to the data completely, and then scaled back. Once these processes were complete (which consisted experimenting with different
+layer types, activation functions and optimizers until satisfactory results began to be achieved) another set of notebooks was created and used to compare feature 
+engineering techniques, the performance of the network using different training and generalisation techniques, and narrowing down the solution.
+
+Each time a network was trained, changes were made, or a network was to be evaluated, it was run inside a Neptune experiment. Over 300 of these experiments were 
+run throughout the neural network and generalisation design process. Neptune.ai is an experiment logging service that records the parameters, gpu and cpu usage, 
+and training statistics of your neural network training sessions. All experiments that were run recorded the layer types, number of each layer type, the "pruning" 
+method used, the dataset used, the feature engineering used, and the training performance. These experiments are logged for public viewing [here](https://ui.neptune.ai/charag/Littlefoot/experiments?viewId=standard-view).
+
+A final set of notebooks were used to train the models used in the physical simulator test - the notebooks trained a model on a Vanilla dataset with no feature 
+engineering, Vanilla dataset with feature engineering, Diverse Dataset without feature engineering, and Diverse dataset with feature engineering. These models 
+were ran back-to-back in the three simulator environments to complete a qualitative test - which measured how many times the car deviated from the track, how many 
+times it recovered, and if it completed the track without deviating more than twice. The final model was selected to be the one trained on the Diverse Dataset 
+with feature engineering - as it almost flawlessly completed each environment.
