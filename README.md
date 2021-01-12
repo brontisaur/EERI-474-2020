@@ -7,6 +7,9 @@ Raspberry Pi/Jetson Nano hooked up to an RC car, or it can be run in the [Donkey
 
 The [Donkey Car](https://github.com/autorope/donkeycar/blob/dev/LICENSE), as well as this EERI 474 Project, is licensed under the  [MIT Open Source
 License](LICENSE).
+
+[Watch Project Overview Video](https://www.youtube.com/watch?v=FjNhCpwV-Tw)
+
 ## Engineering Problem Statement:
 
 To investigate and implement techniques regarding the design, implementation and generalisation of a Convolutional Neural Network (CNN). This CNN is to be 
